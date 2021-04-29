@@ -38,6 +38,8 @@ const person = {
   },
 };
 
+console.log(Object.keys(person).length);
+
 person.bio();
 person.greeting();
 
@@ -53,3 +55,9 @@ const lengthOfPersonObject =
   person.city.length +
   person.country.length;
 console.log("Length of person object: " + lengthOfPersonObject);
+
+let numberOfKeys = 1;
+for (var i = 0; i <= Object.keys(person).length; i++) {
+  numberOfKeys = i;
+}
+console.log(numberOfKeys);
