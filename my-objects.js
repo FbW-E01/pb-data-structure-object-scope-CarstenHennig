@@ -15,7 +15,7 @@ const student = {
 // "John smith is a student in class 12"
 // ```
 console.log(
-  `${student.firstName} ${student.lastName} is a student in class ${student.class}`
+  `${student.firstName} ${student.lastName} is a student in class ${student.class}.`
 );
 
 // 3. Create a person object. Include the person's first and last name, age, job, city etc.
@@ -30,11 +30,11 @@ const person = {
   country: "France",
   bio: function () {
     console.log(
-      `${this.firstName} ${this.lastName} is a ${this.age} years old ${this.job} living in ${this.city} in ${this.country}`
+      `${this.firstName} ${this.lastName} is a ${this.age} years old ${this.job} living in ${this.city} in ${this.country}.`
     );
   },
   greeting: function () {
-    console.log(`Hi! I\'m ` + this.firstName);
+    console.log(`Hi! I\'m ` + this.firstName + `!`);
   },
 };
 
@@ -45,11 +45,11 @@ person.greeting();
 
 // 3. Write a method to get the length of the person object.
 
-console.log(
+const lengthOfPersonObject =
   person.firstName.length +
-    person.lastName.length +
-    toString(person.age).length +
-    person.job.length +
-    person.city.length +
-    person.country.length
-);
+  person.lastName.length +
+  toString(person.age).length +
+  person.job.length +
+  person.city.length +
+  person.country.length;
+console.log("Length of person object: " + lengthOfPersonObject);
